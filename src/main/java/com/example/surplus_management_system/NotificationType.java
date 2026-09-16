@@ -1,0 +1,14 @@
+package com.example.surplus_management_system;
+
+public enum NotificationType {
+    MATCH_FOUND,
+    REQUEST_RECEIVED,
+    REQUEST_ACCEPTED,
+    REQUEST_REJECTED,
+    DELIVERY_STARTED,
+    DELIVERY_DELAYED,
+    DELIVERY_COMPLETED,
+    EXPIRY_WARNING,
+    EMERGENCY_REQUEST,
+    VERIFICATION_REQUIRED
+}
