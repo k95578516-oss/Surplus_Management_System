@@ -5,7 +5,10 @@ WORKDIR /app
 COPY . .
 
 RUN chmod +x mvnw
-RUN ./mvnw clean package -DskipTests
+
+RUN ./mvnw -version
+
+RUN ./mvnw clean package -DskipTests -Dmaven.compiler.release=21
 
 EXPOSE 8080
 
